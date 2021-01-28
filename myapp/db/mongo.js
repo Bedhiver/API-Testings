@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
+const config = require('./config');
 
-const uri = `mongodb://api:docker1234@localhost:27017`;
+const uri = `mongodb://${config.user}:${config.password}@${config.url}`;
 const clientOptions = {
     useNewUrlParser: true,
     useUnifiedTopology: true,

@@ -42,6 +42,9 @@
 # *.iml
 # *.ipr
 
+# Tests generators
+other/
+
 # CMake
 cmake-build-*/
 
